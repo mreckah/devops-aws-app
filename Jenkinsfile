@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = 'dockerhub-creds'
-        DOCKERHUB_USERNAME = 'hamzadahbani'  // Remplace par ton username Docker Hub
+        DOCKERHUB_USERNAME = 'oussama75'  
         BACKEND_IMAGE = "${DOCKERHUB_USERNAME}/fullstack-backend"
         FRONTEND_IMAGE = "${DOCKERHUB_USERNAME}/fullstack-frontend"
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/hamzadahbani/fullstack-app.git'
+                git branch: 'main', url: 'https://github.com/mreckah/devops-aws-app.git'
             }
         }
 
